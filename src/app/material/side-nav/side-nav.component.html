@@ -1,0 +1,19 @@
+
+<div>
+  <app-header (clicked)="opensidenav()"></app-header>
+  <mat-drawer-container class="example-container" autosize>
+      <mat-drawer #drawer class="example-sidenav" mode="side">
+        <p>Auto-resizing sidenav</p>
+       
+      </mat-drawer>
+    
+      <div>
+          <a class="navbar-brand float-right" href="#">
+              <button type="button" (click)="drawer.toggle()">
+                  <img src="../../../assets/icons/Union 4.svg" class="rounded float-right" alt="menu">
+                </button>
+          </a>
+      </div>
+    
+    </mat-drawer-container>
+</div>
